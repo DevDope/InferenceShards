@@ -90,19 +90,37 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Init typed.js
+   * Rotate hero roles through a Matrix-style character scramble.
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
+  const roleSwitch = document.querySelector('.role-switch');
+  if (roleSwitch && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const roles = roleSwitch.dataset.roles.split('|');
+    const glyphs = '01ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/[]{}#$%&*';
+    const announcement = document.querySelector('.role-announcement');
+    let roleIndex = 0;
+
+    setInterval(() => {
+      roleIndex = (roleIndex + 1) % roles.length;
+      const nextRole = roles[roleIndex];
+      let frame = 0;
+      roleSwitch.classList.add('is-decoding');
+
+      const decode = setInterval(() => {
+        roleSwitch.textContent = [...nextRole].map((character, index) => {
+          if (character === ' ') return '\u00a0';
+          if (index < frame / 2) return character;
+          return glyphs[Math.floor(Math.random() * glyphs.length)];
+        }).join('');
+        frame += 1;
+
+        if (frame > nextRole.length * 2) {
+          clearInterval(decode);
+          roleSwitch.textContent = nextRole;
+          roleSwitch.classList.remove('is-decoding');
+          if (announcement) announcement.textContent = nextRole;
+        }
+      }, 38);
+    }, 3200);
   }
 
   /**
