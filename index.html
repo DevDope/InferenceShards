@@ -4,44 +4,45 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - MyResume Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Erick Garcia | AI &amp; LLM Engineer</title>
+  <meta content="Portfolio of Erick Garcia, AI and LLM engineer and PhD researcher specializing in intelligent systems, computer vision, RAG, and data science." name="description">
+  <meta content="Erick Garcia, LLM engineer, AI engineer, data scientist, computer vision, RAG, Python, Django" name="keywords">
   <script src="particles.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
     particlesJS("particles-js", {
         "particles": {
             "number": {
-                "value": 50,
+                "value": 72,
                 "density": {
                     "enable": true,
                     "value_area": 800
                 }
             },
             "color": {
-                "value": "#000000"
+                "value": ["#22c55e", "#86efac", "#ffffff"]
             },
             "shape": {
                 "type": "circle"
             },
             "opacity": {
-                "value": 0.5
+                "value": 0.42,
+                "random": true
             },
             "size": {
-                "value": 3,
+                "value": 2.6,
                 "random": true
             },
             "line_linked": {
                 "enable": true,
-                "distance": 150,
-                "color": "#000000",
-                "opacity": 0.4,
+                "distance": 165,
+                "color": "#22c55e",
+                "opacity": 0.24,
                 "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 1.15,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -60,6 +61,13 @@
                     "enable": true,
                     "mode": "push"
                 }
+            },
+            "modes": {
+                "grab": {
+                    "distance": 190,
+                    "line_linked": { "opacity": 0.72 }
+                },
+                "push": { "particles_nb": 5 }
             }
         },
         "retina_detect": true
@@ -106,8 +114,9 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Experience</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#publications"><i class="bi bi-journal-text navicon"></i><span>Papers &amp; CV</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
@@ -116,21 +125,10 @@
   </header>
 
   <main class="main">
-    <div id="particles-js"></div>
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+    <section id="hero" class="hero section">
+      <div id="particles-js" aria-hidden="true"></div>
       
-      <img src="assets/img/hero-bg.png" alt="" style="
-    z-index: 3;
-    width: 100%;
-    filter: grayscale(10%);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-    pointer-events: none;
-    user-select: none;">
-
-
-
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
@@ -141,12 +139,13 @@
             <p style="
             pointer-events: none;
             user-select: none;
-            ">Sup! I'm <span class="typed" data-typed-items="Data Scientist 📊, Developer 🖥️, Computer Science Master 🧪, Ai Developer 🤖">Data Scientist</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            ">Sup! I'm an <span class="role-switch" data-roles="LLM Engineer|AI Solutions Engineer|PhD Researcher|Data Scientist" aria-hidden="true">LLM Engineer</span><span class="visually-hidden role-announcement" aria-live="polite">LLM Engineer</span></p>
             <div class="social-links">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/dev-ai-erick" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.kaggle.com/devdope" target="_blank" rel="noopener noreferrer" aria-label="Kaggle" title="Kaggle"><i class="bi bi-bar-chart-line"></i></a>
+              <a href="https://civitai.com/user/DevDope" target="_blank" rel="noopener noreferrer" aria-label="Civitai" title="Civitai"><i class="bi bi-brush"></i></a>
+              <a href="https://scholar.google.com/citations?user=Qs7SyF0AAAAJ&amp;hl=es&amp;oi=ao" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="bi bi-mortarboard"></i></a>
+              <a href="https://github.com/DevDope" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
             </div>
           </div>
         </div>
@@ -159,91 +158,92 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">02 / Profile</span>
         <h2>About</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>I build intelligent systems that connect research, software engineering, and real-world applications.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+        <div class="about-profile-card">
+          <div class="about-photo">
+            <img src="assets/img/erick-hero-cutout.png" alt="Erick Garcia">
           </div>
-          <div class="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          <div class="content">
+            <span class="about-eyebrow">LLM Engineer · PhD Researcher</span>
+            <h2>Erick Garcia</h2>
+            <p class="about-intro">
+              I design and deploy AI solutions focused on large language models, computer vision, generative applications, and data-driven decision systems.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
+            <div class="row about-details">
+              <div class="col-md-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i class="bi bi-geo-alt"></i><div><strong>Location</strong><span>Mexico</span></div></li>
+                  <li><i class="bi bi-mortarboard"></i><div><strong>Education</strong><span>PhD Candidate in Computer Science</span></div></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-md-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-envelope"></i><div><strong>Email</strong><a href="mailto:dev.garcia.espinosa.erick@gmail.com">dev.garcia.espinosa.erick@gmail.com</a></div></li>
+                  <li><i class="bi bi-github"></i><div><strong>GitHub</strong><a href="https://github.com/DevDope">github.com/DevDope</a></div></li>
                 </ul>
               </div>
             </div>
-            <p class="py-3">
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
+            <div class="about-tags" aria-label="Main technologies">
+              <span>Transformers &amp; LLMs</span><span>LangChain</span><span>Python</span><span>Django</span><span>Computer Vision</span>
+            </div>
           </div>
         </div>
-
       </div>
 
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+    <section id="stats" class="stats section cinematic-dark">
+
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">03 / Public Impact</span>
+        <h2>Impact in Numbers</h2>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
+            <i class="bi bi-database-down"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="11884" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Kaggle Downloads</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
+            <i class="bi bi-stars"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
+              <span data-purecounter-start="0" data-purecounter-end="6663" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Civitai LoRA Downloads</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
+            <i class="bi bi-table"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Public Datasets</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
+            <i class="bi bi-journal-text"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hard Workers</p>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Peer-Reviewed Publications</p>
             </div>
           </div><!-- End Stats Item -->
 
         </div>
+
+        <p class="stats-source">Public platform metrics verified October 14, 2026.</p>
 
       </div>
 
@@ -252,276 +252,206 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">04 / Expertise</span>
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <p>Technologies I use to take AI products from research and experimentation to reliable deployment.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
+        <div class="row g-4 skill-groups">
+          <div class="col-lg-3 col-md-6"><div class="skill-group"><i class="bi bi-robot"></i><h3>LLM &amp; Generative AI</h3><p>Transformers, LangChain, RAG, LLaMA, Mistral, Flan-T5, LoRA, Stable Diffusion</p></div></div>
+          <div class="col-lg-3 col-md-6"><div class="skill-group"><i class="bi bi-eye"></i><h3>Machine Learning</h3><p>PyTorch, ViT, GANs, OpenCV, LightGBM, XGBoost, time-series forecasting</p></div></div>
+          <div class="col-lg-3 col-md-6"><div class="skill-group"><i class="bi bi-hdd-stack"></i><h3>Backend &amp; Data</h3><p>Python, Django, Django REST Framework, PostgreSQL, ChromaDB, Pandas</p></div></div>
+          <div class="col-lg-3 col-md-6"><div class="skill-group"><i class="bi bi-window"></i><h3>Product Engineering</h3><p>React, TypeScript, Vue.js, Node.js, Gradio, Streamlit, Apache, Windows Server</p></div></div>
         </div>
-
       </div>
 
     </section><!-- /Skills Section -->
 
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <section id="resume" class="resume section cinematic-dark">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+        <span class="section-index">05 / Career</span>
+        <h2>Experience</h2>
+        <p>AI engineering, software development, and applied research focused on intelligent systems and real-world impact.</p>
+      </div>
 
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
+            <h3 class="resume-title">AI Engineering &amp; Research</h3>
 
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+            <div class="resume-item current-role">
+              <h4>Senior AI / LLM Engineer</h4>
+              <h5>May 2026 - Present</h5>
+              <p><em>Su-IT Software a la Medida</em></p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>Lead the full-stack development of SiAudTax, an internal platform that centralizes the complete audit lifecycle for firms, clients, and engagement teams.</li>
+                <li>Built core workflows for audit planning, workpapers, trial-balance imports, lead schedules, evidence, risks, findings, tasks, time tracking, and operational monitoring.</li>
+                <li>Designed the platform with React, TypeScript, Django REST Framework, and PostgreSQL, including role-based access, organizational context, audit trails, and secure account recovery.</li>
+                <li>Improved workpaper editing, Excel processing, versioning, signatures, audit marks, multilingual instructions, and Windows deployment tooling.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div><!-- Edn Resume Item -->
+            </div>
 
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div><!-- Edn Resume Item -->
+              <h4>Doctoral Researcher – PhD in Computer Science</h4>
+              <h5>February 2025 - Present</h5>
+              <p><em>SECIHTI · Mexico</em></p>
+              <ul>
+                <li>Research intelligent agriculture, greenhouse monitoring, and data-driven irrigation analysis.</li>
+                <li>Built a Raspberry Pi sensing platform and reproducible Python pipeline for tomato greenhouse time-series data.</li>
+                <li>Benchmark predictive models including XGBoost, LightGBM, GRU, TCN, Transformer, and Temporal Fusion Transformer.</li>
+              </ul>
+            </div>
 
+            <div class="resume-item">
+              <h4>AI / LLM Engineer</h4>
+              <h5>May 2025 - May 2026</h5>
+              <p><em>Su-IT Software a la Medida · Mexico City</em></p>
+              <ul>
+                <li>Built and deployed TPSM, a Django platform for transfer-pricing studies, document automation, and AI-assisted analysis.</li>
+                <li>Developed a local RAG workflow using LangChain, ChromaDB, Transformers, LLaMA 3, Mistral 7B, and Flan-T5.</li>
+                <li>Reduced analysis preparation from about one week to 40 minutes and final report generation from three days to 20 minutes.</li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
+            <h3 class="resume-title">Software Development</h3>
 
             <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>AI Training for Coding</h4>
+              <h5>February 2025 - May 2025</h5>
+              <p><em>Outlier · United States</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Evaluated Python code generated by LLMs for logic, reliability, accuracy, and overall quality.</li>
+                <li>Identified issues and rewrote faulty solutions with correct, optimized implementations.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>
 
+            <div class="resume-item">
+              <h4>Software Developer</h4>
+              <h5>March 2024 - March 2025</h5>
+              <p><em>Edutec Sistemas y Redes · Toluca, Mexico</em></p>
+              <ul>
+                <li>Developed modules for Own Revenues, Inventory Management, and Asset Control for a UAEM management system.</li>
+                <li>Improved workflows, database queries, and system performance using PHP, JavaScript, and CodeIgniter.</li>
+                <li>Provided technical support and training for up to 10 users.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Full Stack Developer</h4>
+              <h5>September 2023 - August 2024</h5>
+              <p><em>Universidad Autónoma del Estado de México · Toluca, Mexico</em></p>
+              <ul>
+                <li>Built an interactive socioeconomic map of the State of Mexico covering poverty, education, and marginalization indicators.</li>
+                <li>Developed the interface with Vue.js and Vuetify and backend services with Node.js and Express.js.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>AI Research Fellow – Master’s in Computer Science</h4>
+              <h5>January 2022 - July 2024</h5>
+              <p><em>SECIHTI · Mexico</em></p>
+              <ul>
+                <li>Conducted applied research in computer vision, NLP, and generative AI as a Conacyt scholar.</li>
+                <li>Built a ViT-based skin disease detection system with 92.7% validation accuracy, resulting in three peer-reviewed publications.</li>
+                <li>Created a RAG playlist system ranked in the top 200 of the NVIDIA LLaMA Index Contest.</li>
+              </ul>
+            </div>
           </div>
-
         </div>
-
       </div>
 
     </section><!-- /Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+        <span class="section-index">06 / Portfolio</span>
+        <h2>Selected Work</h2>
+        <p>Production platforms, applied AI research, and open resources built around measurable problems.</p>
       </div>
 
+      <div class="container">
+        <div class="row g-4 project-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>SiAudTax image</span></div><div class="project-body"><span>Audit Platform</span><h3>SiAudTax</h3><p>Full-stack audit lifecycle platform covering planning, workpapers, evidence, risks, findings, time tracking, and operational monitoring.</p><div class="project-tech">React · TypeScript · Django · PostgreSQL</div><div class="project-actions"><a href="https://github.com/DevDope/SI-Auditax-showcase" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a></div></div></article></div>
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>TPSM image</span></div><div class="project-body"><span>AI Document Automation</span><h3>TPSM</h3><p>Transfer-pricing platform with local RAG, structured report editing, automated document ingestion, and Word/PDF generation.</p><div class="project-tech">Django · LangChain · ChromaDB · LLMs</div><div class="project-actions"><a href="https://github.com/DevDope/TPSM-showcase" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a></div></div></article></div>
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>D.A.N.N. image</span></div><div class="project-body"><span>Computer Vision Research</span><h3>D.A.N.N.</h3><p>Skin-disease classification with Vision Transformers, GANs, and Stable Diffusion, reaching 92.7% validation accuracy and three publications.</p><div class="project-actions"><a href="https://github.com/DevDope/D.A.N.N" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a><a href="https://www.kaggle.com/datasets/devdope/skin-disease-raw-dataset" target="_blank" rel="noopener noreferrer"><i class="bi bi-database"></i> Dataset</a></div></div></article></div>
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>Abracadabra image</span></div><div class="project-body"><span>Retrieval-Augmented Generation</span><h3>Abracadabra</h3><p>Dynamic playlist generation over a 500K+ song dataset; ranked among the top 200 entries in the NVIDIA LlamaIndex contest.</p><div class="project-actions"><a href="https://github.com/DevDope/Abracadabra" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a><a href="https://www.kaggle.com/datasets/devdope/900k-spotify" target="_blank" rel="noopener noreferrer"><i class="bi bi-database"></i> Dataset</a></div></div></article></div>
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>Greenhouse image</span></div><div class="project-body"><span>PhD Research</span><h3>Smart Greenhouse AI</h3><p>IoT sensing and reproducible time-series modeling for greenhouse monitoring, irrigation analysis, and agronomic alerts.</p><div class="project-actions"><a href="https://github.com/DevDope/Greenhouse-Cold-Start-Benchmark" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a><a href="https://www.kaggle.com/datasets/devdope/smart-greenhouse-climate-dataset" target="_blank" rel="noopener noreferrer"><i class="bi bi-database"></i> Dataset</a></div></div></article></div>
+          <div class="col-lg-4 col-md-6"><article class="project-card"><div class="project-media"><i class="bi bi-image"></i><span>LoRA collection image</span></div><div class="project-body"><span>Generative AI</span><h3>LoRA Collection</h3><p>Thirteen public LoRAs spanning artistic styles and medical image generation, with more than 6,600 community downloads.</p><div class="project-actions"><a href="https://github.com/DevDope" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a><a href="https://civitai.com/user/DevDope" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Models</a></div></div></article></div>
+        </div>
+      </div>
     </section><!-- /Portfolio Section -->
 
+    <!-- Publications Section -->
+    <section id="publications" class="publications section">
+      <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">07 / Research</span>
+        <h2>Papers &amp; CV</h2>
+        <p>Peer-reviewed work in computer vision and medical AI, plus my complete professional profile.</p>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 publication-grid">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <article class="publication-card">
+              <span class="paper-number">01</span>
+              <div class="paper-meta">Abstraction &amp; Application · 2024</div>
+              <h3>Comparison of artificial vision algorithms in the classification of skin diseases using neural networks</h3>
+              <div class="paper-details"><span>Orange Data Mining</span><span>Azure Custom Vision</span><span>CNN</span></div>
+              <div class="paper-rank">Quartile <strong>Not reported</strong></div>
+              <a href="https://ri.uaemex.mx/bitstream/20.500.11799/140626/1/Comparison%20of%20artificial%20vision%20algorithms%20in%20the%20classification%20of%20skin%20diseases%20using%20neural%20networks.pdf?isAllowed=y&amp;sequence=1" target="_blank" rel="noopener noreferrer">Read paper <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="180">
+            <article class="publication-card">
+              <span class="paper-number">02</span>
+              <div class="paper-meta">IJCOPI · Vol. 16(2) · 2025</div>
+              <h3>Generative AI and Transformers in Advanced Skin Lesion Classification applied on a mobile device</h3>
+              <div class="paper-details"><span>Vision Transformer</span><span>GAN</span><span>Raspberry Pi 4</span></div>
+              <div class="paper-rank">JCR Quartile <strong>Q4</strong></div>
+              <a href="https://doi.org/10.61467/2007.1558.2025.v16i2.1078" target="_blank" rel="noopener noreferrer">Read paper <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="260">
+            <article class="publication-card">
+              <span class="paper-number">03</span>
+              <div class="paper-meta">Springer CCIS · WEA 2024</div>
+              <h3>Skin Disease Pre-diagnosis with Novel Visual Transformers</h3>
+              <div class="paper-details"><span>Vision Transformer</span><span>Transfer Learning</span><span>Computer Vision</span></div>
+              <div class="paper-rank">SJR Quartile <strong>Q4</strong></div>
+              <a href="https://doi.org/10.1007/978-3-031-74595-9_10" target="_blank" rel="noopener noreferrer">Read paper <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="cv-panel" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <span>Curriculum Vitae</span>
+            <h3>Experience, research, and technical background</h3>
+            <p>Download the latest profile exported from LinkedIn or open it directly in your browser.</p>
+          </div>
+          <div class="cv-actions">
+            <a href="assets/documents/Erick-Garcia-CV.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-eye"></i> View CV</a>
+            <a href="assets/documents/Erick-Garcia-CV.pdf" download="Erick-Garcia-CV.pdf"><i class="bi bi-download"></i> Download PDF</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Publications Section -->
+
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section cinematic-dark">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">08 / Capabilities</span>
         <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>End-to-end AI and software engineering for teams that need research translated into dependable products.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -537,9 +467,9 @@
                 <i class="bi bi-activity"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>LLM &amp; RAG Solutions</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Private assistants, semantic search, grounded generation, document ingestion, and evaluation workflows built around your data.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -552,9 +482,9 @@
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>AI Product Development</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Production-ready AI applications combining model pipelines, backend services, databases, APIs, and accessible interfaces.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -567,9 +497,9 @@
                 <i class="bi bi-easel"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Computer Vision</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Classification, segmentation, image generation, and visual analysis using ViTs, OpenCV, GANs, and diffusion models.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -582,9 +512,9 @@
                 <i class="bi bi-bounding-box-circles"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Data Science &amp; Forecasting</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Reproducible analysis, feature engineering, clustering, forecasting, and decision-support systems for real-world data.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -598,9 +528,9 @@
                 <i class="bi bi-calendar4-week icon"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Backend Automation</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>Django and PostgreSQL platforms that automate documents, reports, permissions, validation, and operational workflows.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -614,9 +544,9 @@
                 <i class="bi bi-chat-square-text"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>Research Prototyping</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>From experiment design and model benchmarking to reproducible prototypes, technical reports, and deployment-ready proof of concept.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -628,7 +558,7 @@
     </section><!-- /Services Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <section id="testimonials" class="testimonials section" hidden>
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -638,7 +568,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
+        <div class="swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -765,8 +695,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-index">09 / Contact</span>
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Have an AI, research, or software engineering challenge? Let’s talk about the problem and the shortest path to a useful result.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade" data-aos-delay="100">
@@ -777,59 +708,36 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Location</h3>
+                <p>Mexico · Available for remote collaboration</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
+              <i class="bi bi-linkedin flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/dev-ai-erick" target="_blank" rel="noopener noreferrer">linkedin.com/in/dev-ai-erick</a></p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Email</h3>
+                <p><a href="mailto:dev.garcia.espinosa.erick@gmail.com">dev.garcia.espinosa.erick@gmail.com</a></p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
+            <div class="contact-callout" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-chat-dots"></i>
+              <h3>Start a conversation</h3>
+              <p>Tell me what you are building, researching, or trying to automate. I can help define the technical approach and turn it into a working system.</p>
+              <a href="mailto:dev.garcia.espinosa.erick@gmail.com?subject=Project%20inquiry">Send an email <i class="bi bi-arrow-right"></i></a>
+            </div>
           </div><!-- End Contact Form -->
 
         </div>
@@ -840,27 +748,20 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative cinematic-dark">
     <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">Erick Garcia</h3>
+      <p>LLM Engineer and PhD researcher building intelligent systems with measurable real-world impact.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/dev-ai-erick" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.kaggle.com/devdope" target="_blank" rel="noopener noreferrer" aria-label="Kaggle"><i class="bi bi-bar-chart-line"></i></a>
+        <a href="https://civitai.com/user/DevDope" target="_blank" rel="noopener noreferrer" aria-label="Civitai"><i class="bi bi-brush"></i></a>
+        <a href="https://scholar.google.com/citations?user=Qs7SyF0AAAAJ&amp;hl=es&amp;oi=ao" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="bi bi-mortarboard"></i></a>
+        <a href="https://github.com/DevDope" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <span>Copyright</span> <strong class="px-1 sitename">Erick Garcia</strong> <span>All Rights Reserved</span>
         </div>
       </div>
     </div>
@@ -876,7 +777,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
